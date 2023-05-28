@@ -1,0 +1,31 @@
+div.modal {
+  z-index: 9999999;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.modal div.modal-body {
+  padding: 2vh 2vw;
+  width: 50vw;
+  height: 50vh;
+  background-color: #555555;
+}
+
+div.modal div.modal-body div {
+  padding: 0.5vh;
+}
+div.modal div.modal-body div.modal-header {
+  justify-content: space-between;
+}
+
+div.modal div.modal-body div.menu-controls * {
+  margin: 0 0.5vw;
+}

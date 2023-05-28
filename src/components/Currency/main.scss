@@ -1,0 +1,21 @@
+@import '../../vars.scss';
+div.currency {
+  text-align: right;
+}
+
+div.currency span {
+  display: block;
+  margin: 0;
+}
+
+div.currency span.gold {
+  color: $gold;
+}
+
+div.currency span.silver {
+  color: $silver;
+}
+
+div.currency span.copper {
+  color: $copper;
+}

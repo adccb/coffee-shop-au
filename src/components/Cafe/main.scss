@@ -1,0 +1,23 @@
+@import '../../vars.scss';
+
+aside#cafe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: $aside-width;
+  background: $background-light;
+  padding: 2vh 2vw;
+  display: flex;
+  justify-content: center;
+
+  & div {
+    text-align: center;
+  }
+}
+
+@media (max-width: $bp-lg) {
+  aside#cafe {
+    display: none;
+  }
+}

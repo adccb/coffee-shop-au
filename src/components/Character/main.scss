@@ -1,0 +1,25 @@
+@import '../../vars.scss';
+
+div#character-view {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: $footer-height;
+  width: 100%;
+  padding: 0 10vw;
+  display: flex;
+  align-items: center;
+  background-color: $primary;
+}
+
+div#character-view div {
+  margin: 0 1rem;
+}
+
+div#character-view div.census-info span {
+  padding: 0 0.5rem;
+}
+
+div#character-view div.input-with-label * {
+  display: block;
+}

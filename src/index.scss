@@ -1,0 +1,66 @@
+@import './vars.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&display=swap');
+
+body {
+  line-height: 1.5;
+  margin: 0;
+  font-family: 'Fira Code', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $background;
+  color: $main-text;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+*.hidden {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*.click-target {
+  cursor: pointer;
+}
+button {
+  background-color: $tertiary;
+  border: 0;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  color: $secondary-text;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+button:hover {
+  background-color: $tertiary-dark;
+}
+
+button.subtle {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px $secondary-text solid;
+  color: $secondary-text;
+  box-shadow: none;
+}
+
+input[type='text'] {
+  margin-top: 0.25rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-size: 1.15rem;
+  border: 1px $tertiary solid;
+  animation: border-color 0.2s;
+  width: 100%;
+}
+
+input[type='text']:hover,
+input[type='text']:focus,
+input[type='text']:hover {
+  border-color: $tertiary-dark;
+}
